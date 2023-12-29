@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+}
+
+
+
+#wrap {
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#container{
+	width: auto;
+}
+
+#container table{
+	align-items: center;
+}
+td {
+    text-align: right;
+    margin: 10px;
+    font-weight: 600;
+    
+}
+
+.btn8{
+	width: 100px;
+	height:30px;
+	 background-color: #93aaa5;
+    font-style: italic;
+    color: lightgray;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.form2btn{
+	display: flex;
+	bottom: 0;
+}
+
+
+#logo{
+	width: 100%;
+    height: 100px;
+    border-bottom: 2px solid lightgray;
+}
+
+
+.btn10{
+	width: 50px;
+	height:30px;
+	background-color: #93aaa5;
+    font-style: italic;
+    color: lightgray;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    font-weight: bold;
+    border-radius: 4px;
+	
+}
+.btn10:hover{
+    background-color: #028267;
+    border: 1px solid #028267;
+    color: black;
+}
+
+img {
+    top: 10%;
+    position: center;
+    
+    width: 300px;
+
+}
+.btn9box{
+	margin-top: 20px;
+	
+	justify-content: space-between;
+}
+.btn9 {
+    width: 200px;
+    height: 30px;
+    background-color: #93aaa5;
+    font-style: italic;
+    color: lightgray;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.btn9:hover{
+    background-color: #028267;
+    border: 1px solid #028267;
+    color: black;
+}
+
+
+
+tr input {
+    margin-left: 20px;
+    background-color: lightgrey;
+    border-radius: 5px;
+     border: none; 
+    border: 1px solid transparent;
+    height: 30px;
+    transition: 0.5s;
+    outline-color: transparent;
+    width: 200px;
+}
+
+tr td:hover{
+    border: 1px solid #028267;
+}
+
+tr td:focus{
+   outline-color: #028267;
+}

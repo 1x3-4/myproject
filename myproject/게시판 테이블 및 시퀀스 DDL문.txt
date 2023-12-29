@@ -1,0 +1,26 @@
+drop table tb_board;
+
+create table tb_board(
+b_idx number, --게시글번호(기본키)
+m_idx number not null, --회원번호(참조키)
+writer varchar2(30) not null, --작성자
+title varchar2(50) not null, --제목
+content varchar2(1000) not null, --내용
+originfile_name varchar2(50),--원본파일명
+savefile_name varchar2(50),--저장파일명
+read_cnt number(10) default 0,--조회수
+post_date date default sysdate,--작성일
+update_date date default sysdate, --수정일
+del_or_not number(1) default 1,--삭제여부
+constraint tb_board_pk primary key (b_idx),
+constraint tb_board_fk foreign key (m_idx)
+   references tb_member (m_idx) 
+);  
+
+drop sequence board_seq;
+
+create sequence board_seq
+ minvalue 1
+ maxvalue 9999999999
+ noorder;
+
